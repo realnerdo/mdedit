@@ -3,9 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>Real Time Markdown Viewer</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body class="container-fluid">
-        Hello there!
+        <section class="row">
+            <textarea class="col-md-6 full-height" id="pad">Write something nice...</textarea>
+            <div class="col-md-6 full-height" id="markdown"></div>
+        </section>
+
+        <script type="text/javascript" src="https://cdn.rawgit.com/showdownjs/showdown/1.0.2/dist/showdown.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
